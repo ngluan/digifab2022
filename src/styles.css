@@ -306,7 +306,7 @@ article {
     grid-area: informasjon;
     background-color: #bfdde2;
     border-radius: 40px;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
   }
   
   #informasjon p{
@@ -431,7 +431,7 @@ article {
     }
 
     #informasjon p {
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
 
     .socialmicon li{
@@ -450,6 +450,11 @@ article {
       padding: 0 1.3rem;
     }
   }
+  @media only screen and (max-width: 430px) {
+    #informasjon p {
+      font-size: 0.77rem;
+    }
+  }
 
   @media only screen and (max-width: 400px) {
     #profilbilde {
@@ -458,6 +463,10 @@ article {
 
     #fornavn, #mellomnavn, #etternavn {
       font-size: 1.6rem;
+    }
+
+    #informasjon p {
+      font-size: 0.7rem;
     }
 
   }
@@ -473,7 +482,14 @@ article {
 
     #informasjon p {
       font-size: 0.5rem;
+      padding: 0.5rem;
     }
+
+    #informasjon {
+      padding: 0.3rem;
+    }
+
+    
   }
 
 }
