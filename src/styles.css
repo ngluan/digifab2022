@@ -447,7 +447,32 @@ article {
     }
 
     #profilbilde {
-      padding: 0 0.9rem;
+      padding: 0 1.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    #profilbilde {
+      padding: 0 0.8rem;
+    }
+
+    #fornavn, #mellomnavn, #etternavn {
+      font-size: 1.6rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 330px) {
+    #fornavn, #mellomnavn, #etternavn {
+      font-size: 1.3rem;
+    }
+
+    #profilbilde {
+      padding: 0 0.4rem;
+    }
+
+    #informasjon p {
+      font-size: 0.5rem;
     }
   }
 
