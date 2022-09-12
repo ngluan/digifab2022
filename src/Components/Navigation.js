@@ -7,7 +7,7 @@ export default function Navigation() {
     <div>
       <nav>
         <h1>
-          <NavLink  className="logo" to="/">
+          <NavLink  className="logo" to="/digifab2022">
            LUAN
           </NavLink>
         </h1>
