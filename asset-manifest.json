@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/digifab2022/static/css/main.d968ccd2.css",
+    "main.js": "/digifab2022/static/js/main.a596ea43.js",
+    "static/media/bilde6.jpg": "/digifab2022/static/media/bilde6.a27796596aa17a307955.jpg",
+    "static/media/bilde5.jpg": "/digifab2022/static/media/bilde5.2405036f0a37e2da0699.jpg",
+    "static/media/bilde9.jpg": "/digifab2022/static/media/bilde9.b69ab1e217e552acb8f9.jpg",
+    "static/media/bilde7.jpg": "/digifab2022/static/media/bilde7.971e1d726796e413da8a.jpg",
+    "static/media/bilde4.jpg": "/digifab2022/static/media/bilde4.0f98aeda45492d300558.jpg",
+    "static/media/profilbilde.jpg": "/digifab2022/static/media/profilbilde.92581774474ebb95145c.jpg",
+    "static/media/bilde8.jpg": "/digifab2022/static/media/bilde8.968d4214bd02343a06ed.jpg",
+    "static/media/bilde3.jpg": "/digifab2022/static/media/bilde3.9c97e14f514f09abc90a.jpg",
+    "static/media/bilde1.jpg": "/digifab2022/static/media/bilde1.717572b6fdba66614e9f.jpg",
+    "static/media/bilde2.jpg": "/digifab2022/static/media/bilde2.5fed2f135a164831fc6a.jpg",
+    "index.html": "/digifab2022/index.html",
+    "main.d968ccd2.css.map": "/digifab2022/static/css/main.d968ccd2.css.map",
+    "main.a596ea43.js.map": "/digifab2022/static/js/main.a596ea43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d968ccd2.css",
+    "static/js/main.a596ea43.js"
+  ]
+}
