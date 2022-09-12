@@ -16,7 +16,7 @@ export default function App() {
       {/* <Header /> */}
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/digifab2022" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/pictures" element={<Picture />} />
           {/* <Route path="/works" element={<Work />} /> */}
