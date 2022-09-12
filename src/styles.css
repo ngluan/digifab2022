@@ -426,6 +426,10 @@ article {
       font-size: 2rem;
     }
 
+    #profilbilde {
+      padding: 0 0.9rem;
+    }
+
     #aboutfornavn, #aboutmellomnavn, #aboutetternavn {
       font-size: 37px;
     }
@@ -433,7 +437,6 @@ article {
     #informasjon p {
       font-size: 0.7rem;
     }
-    
 
     .socialmicon li{
       height: 40px;
