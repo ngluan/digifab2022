@@ -1,0 +1,458 @@
+.App {
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  text-align: center;
+}
+
+body {
+  display: grid;
+  margin: 0 4rem;
+  /* font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #071e2e;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  /* column-gap: 0.5rem; */
+  grid-template-areas:
+    "nav"
+    "main"
+}
+ 
+/* main {
+  padding: 3rem;
+} */
+
+
+/* Navbar */
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0.1rem 1rem 0.1rem; */
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  list-style-type: none;
+}
+
+.navBtn {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: 2px 1px #2d3942;
+}
+
+.navBtn.active {
+  background-color: rgba(57, 211, 203, 0.678);
+  border-radius: 15px;
+}
+
+.logo {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  letter-spacing: 30px;
+  text-decoration: none;
+  text-shadow: 2px 2px #7cbac5;
+}
+
+.logo:hover {
+  color:rgb(94, 94, 179);
+}
+
+/* om meg */
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "logos" "story"
+}
+
+
+#socialm {
+  display: flex;
+  grid-area: logos;
+  list-style-type: none;
+  flex-direction: column;
+  padding: 0 1rem 0 0;
+}
+
+#socialm li {
+  padding: 1rem;
+}
+
+.socialmicon {
+  background-color: rgb(94, 94, 179);
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 1rem;
+}
+
+.socialmicon:hover{
+  background-color: rgba(57, 211, 203, 0.678);
+}
+
+#aboutfornavn {
+  color: white;
+  font-size: xxx-large;
+}
+
+#aboutmellomnavn {
+  color: white;
+  font-size: xxx-large;
+}
+
+#aboutetternavn{
+  color:rgba(57, 211, 203, 0.678);
+  font-size: xxx-large;
+}
+
+#ommeg, main, p {
+  font-size: 25px;
+}
+
+/* Bilder side */
+
+#gallery {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+ /* .cac{
+  display:flex;
+  padding: 0;
+ } */
+
+#gallery img {
+  max-width: 32%;
+  border-radius: 10px;;
+}
+
+/* framside */
+#frontpage {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 4rem 1fr 1fr 2rem;
+}
+
+article {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  background-color: rgba(57, 211, 203, 0.678);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 7px 7px rgba(16, 59, 57, 0.678);
+}
+
+#kort {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  grid-template-areas: 
+  "profilbilde informasjon";
+}
+
+#frontbilde {
+  border-radius: 50%;
+  max-width: 50%;
+}
+
+#informasjon {
+  grid-area: informasjon;
+  background-color: #bfdde2;
+  border-radius: 40px;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+#informasjon p{
+  font-weight: 600;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+#profilbilde {
+  border-right: 3px solid rgba(19, 90, 86, 0.678);
+  padding: 0 1rem 0 3rem;
+}
+
+#navn {
+  display: flex;
+  flex-direction: column;
+}
+
+.skriftfarge {
+  color:rgba(23, 106, 99, 0.678);
+  font-weight: 600;
+}
+
+/* fonter og størrelse */
+.iconsize {
+  font-size: 75px;
+}
+
+.skrift {
+  color: white;
+}
+
+#fornavn {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+#mellomnavn {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(61, 61, 114);
+}
+
+#etternavn {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgba(55, 253, 243, 0.678)
+}
+
+.overskrift {
+  font-size: xxx-large;
+  color: white;
+}
+
+/* kompetanse side */
+#skills {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+  #gallery img {
+    max-width: 30%;
+  }
+
+  .iconsize {
+    font-size: 65px;
+  }
+  
+  #mellomnavn, #fornavn,#etternavn {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+  }
+
+  #informasjon p {
+    font-size: 1.3rem;
+  }
+  #frontbilde {
+    max-width: 70%;
+  }
+  
+  
+
+}
+
+@media only screen and (max-width: 1100px) {
+  #mellomnavn, #fornavn,#etternavn {
+    font-size: 3rem;
+  }
+
+  #profilbilde {
+    padding: 0 1rem; 
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  #mellomnavn, #fornavn,#etternavn {
+    font-size: 2.3rem;
+  }
+
+  #frontbilde {
+    max-width: 80%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  #informasjon p {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+  #frontbilde {
+    max-width: 70%;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+  #informasjon {
+    grid-area: informasjon;
+    background-color: #bfdde2;
+    border-radius: 40px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  
+  #informasjon p{
+    padding: 1rem;
+  }
+
+  #fornavn, #mellomnavn, #etternavn {
+    font-size: 1.8rem;
+  }
+
+  #profilbilde {
+    padding: 0 1.5rem;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+
+  #ommeg, main, p {
+    font-size: 18px;
+  }
+
+  nav {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+  }
+
+  nav ul {
+      display: flex;
+      padding: 0;
+      flex-direction: column;    
+  }
+
+  nav li {
+      margin: 10px;
+  }
+
+  .navBtn {
+      margin: 0;
+      padding: 0.7rem;
+  }
+
+  #frontpage {
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem 1fr 1fr 1fr 2rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "story"
+    "logos"
+  }
+
+  #socialm {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .socialmicon {
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+  }
+
+  #sosialmlogo {
+    grid-area: logos;
+    padding: 0;
+  }
+
+  #ommeg {
+    grid-area: story;
+  }
+  
+
+  #gallery img {
+    max-width: 100%;
+  }
+
+  .logo {
+    padding-left: 1.5rem;
+  }
+
+  #frontbilde {
+    max-width: 65%;
+    padding-left: 0;
+  }
+
+  #fornavn, #mellomnavn, #etternavn  {
+    font-size: 3rem;
+  }
+
+  #informasjon p {
+    font-size: 1.3rem;
+    padding: 0.7rem;
+  }
+  
+
+  @media only screen and (max-width: 500px) {
+    #fornavn, #mellomnavn, #etternavn {
+      font-size: 2rem;
+    }
+
+    #aboutfornavn, #aboutmellomnavn, #aboutetternavn {
+      font-size: 37px;
+    }
+
+    #informasjon p {
+      font-size: 0.7rem;
+    }
+    
+
+    .socialmicon li{
+      height: 40px;
+    }
+
+    .iconsize {
+      font-size: 40px;
+    }
+
+    #kort {
+      padding: 0.5rem;
+    }
+
+    #profilbilde {
+      padding: 0 1.5rem;
+    }
+  }
+
+}
+
+
+
