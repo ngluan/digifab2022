@@ -238,6 +238,10 @@ article {
   justify-content: space-between;
 }
 
+.models {
+  max-width: 60%;
+
+}
 
 
 @media only screen and (max-width: 1300px) {
@@ -319,6 +323,11 @@ article {
 
   #profilbilde {
     padding: 0 1.5rem;
+  }
+
+  .models {
+    max-width: 100%;
+  
   }
 
 
