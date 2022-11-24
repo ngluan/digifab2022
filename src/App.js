@@ -8,6 +8,8 @@ import About from "./Components/About";
 import Home from "./Components/Home";
 import Picture from "./Components/Picture";
 import Skills from "./Components/Skills";
+import Digifab3D from "./Components/Digifab3D"
+
 
 export default function App() {
   return (
@@ -21,6 +23,7 @@ export default function App() {
           <Route path="/pictures" element={<Picture />} />
           {/* <Route path="/works" element={<Work />} /> */}
           <Route path="/skills" element={<Skills />} />
+          <Route path="/digifab3d" element={<Digifab3D />} />
         </Route>
       </Routes>
     </>

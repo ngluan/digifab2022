@@ -32,6 +32,11 @@ export default function Navigation() {
               Erfaringer
             </NavLink>
           </li> */}
+          <li>
+            <NavLink className="navBtn" to="/digifab3d">
+              Digifab 3D
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </div>
